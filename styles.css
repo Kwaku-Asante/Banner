@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.phone-showcase {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Align the bottom of the phones */
+    gap: 20px;
+    padding: 50px;
+    background-color: #e5e5e5;
+}
+
+.phone {
+    transition: transform 0.3s ease-in-out;
+}
+
+.phone:hover {
+    transform: scale(1.1);
+}
+
+.phone img {
+    object-fit: contain;
+}
+
+/* Decreasing size order */
+.phone.large img {
+    max-width: 150px; /* Largest */
+}
+
+.phone.medium img {
+    max-width: 120px; /* Medium */
+}
+
+.phone.small img {
+    max-width: 90px; /* Small
